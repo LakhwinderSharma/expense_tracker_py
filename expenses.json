@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "category": "Rent",
+    "amount": 20000,
+    "month": "August"
+  },
+  {
+    "id": 2,
+    "category": "Groceries",
+    "amount": 4500,
+    "month": "August"
+  },
+  {
+    "id": 3,
+    "category": "Internet",
+    "amount": 1000,
+    "month": "August"
+  },
+  {
+    "id": 4,
+    "category": "Fuel",
+    "amount": 3000,
+    "month": "July"
+  }
+]
