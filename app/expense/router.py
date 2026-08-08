@@ -81,37 +81,8 @@ def create_expense(
     request: ExpenseRequest,
     service: ExpenseService = Depends(get_expense_service),
 ):
-    """
-    Create a new expense.
-    """
 
-    return service.create_expense(request)
-
-
-@router.put(
-    "/{expense_id}",
-    response_model=ExpenseResponse,
-)
-def update_expense(
-    expense_id: int,
-    request: ExpenseRequest,
-    service: ExpenseService = Depends(get_expense_service),
-):
-    """
-    Update an expense.
-    """
-
-    try:
-        return service.update_expense(
-            expense_id,
-            request,
-        )
-
-    except ValueError as ex:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=str(ex),
-        )
+    return service.create_update_expense(request)
 
 
 @router.delete(

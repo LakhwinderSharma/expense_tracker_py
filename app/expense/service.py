@@ -32,6 +32,15 @@ class ExpenseService:
 
         return self._repository.find_by_month(month, year)
 
+
+    def create_update_expense(self,request:ExpenseRequest)->Expense:
+       if request.id:
+           return self.update_expense(request.id, request)
+       else:
+           return self.create_expense(request)
+
+
+
     def create_expense(
         self,
         request: ExpenseRequest,
