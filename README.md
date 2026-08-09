@@ -12,6 +12,7 @@ Before you begin, make sure you have the following installed:
 Verify the installations:
 
 python --version
+
 uv --version
 
 # Install Dependencies
