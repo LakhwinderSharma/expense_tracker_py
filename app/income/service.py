@@ -43,7 +43,6 @@ class IncomeService:
 
     def get_income_by_id(self, income_id: int) -> Income:
 
-
         income = self._repository.find_income_by_id(income_id)
 
         if income is None:
