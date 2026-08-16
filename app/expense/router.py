@@ -75,9 +75,9 @@ def get_expenses_by_month(
 @router.post(
     "",
     response_model=ExpenseResponse,
-    status_code=status.HTTP_201_CREATED,
+    status_code=status.HTTP_200_OK,
 )
-def create_expense(
+def create_update_expense(
     request: ExpenseRequest,
     service: ExpenseService = Depends(get_expense_service),
 ):

@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "category": "Salary",
+        "amount": "51000",
+        "description": "Aug Salary",
+        "income_date": "2026-08-15",
+        "updated_at": "2026-08-16T20:29:23.181956Z"
+    },
+    {
+        "id": 2,
+        "category": "Dividend",
+        "amount": "2700",
+        "description": "Infosys Div",
+        "income_date": "2026-08-17",
+        "updated_at": "2026-08-16T20:30:44.669135Z"
+    }
+]

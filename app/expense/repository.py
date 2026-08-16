@@ -14,9 +14,10 @@ class ExpenseRepository:
         if not self._file_path.exists():
             return []
 
-        with self._file_path.open("r", encoding="utf-8") as file: data = json.load(file)
+        with self._file_path.open("r", encoding="utf-8") as file:
+            data = json.load(file)
 
-        return [Expense.model_validate(item)for item in data  ]
+        return [Expense.model_validate(item) for item in data  ]
 
     def find_by_id(self, expense_id: int) -> Expense | None:
 
